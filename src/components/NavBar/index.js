@@ -1,46 +1,22 @@
 import './style.scss';
 
-import { useState } from 'react';
+import LinkDesktop from '../LinkDesktop';
+import LinkMobile from '../LinkMobile';
 
-import Burger from '../Burger';
 
+const NavBar = ({ width, breakpoint }) => (
 
-const NavBar = ({ width, breakpoint }) => {
+  <div className="navbar">
 
-  const [burgerOpen, setBurgerOpen] = useState(false);
+    <a href="/">
+      <h1>Morgane Benureau</h1>
+    </a>
   
-  const toggleBurger = () => {
-    setBurgerOpen(!burgerOpen)
-  };
+    { width < breakpoint ? <LinkMobile /> : <LinkDesktop /> }
 
-  return(
+  </div>
   
-    <div className="navbar">
-      <a href="/">
-        <h1>Morgane Benureau</h1>
-      </a>
-    
-      {/* width < breakpoint ? <HeaderMobile /> : <HeaderDesktop /> */}
-
-      <button className="burger" onClick={toggleBurger} >
-        <Burger />
-      </button>
-
-      <ul className= {`menuNav ${burgerOpen ? " showMenu" : ""}`} >
-        <li> 
-          <a href="/A-propos">A Propos</a> 
-        </li>
-        <li> 
-          <a href="/Contact">Projets</a> 
-          </li>
-        <li> 
-          <a href="/Projets">Contact</a> 
-        </li>
-      </ul>
-
-    </div>
-  )
-};
+);
 
 
 export default NavBar;

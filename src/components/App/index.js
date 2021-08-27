@@ -18,7 +18,7 @@ const App = () => {
   // find window width to add a breakpoint
   const [width, setWidth] = useState(window.innerWidth);
   // defined a breakpoint
-  const breakpoint = 1025;
+  const breakpoint = 750;
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
