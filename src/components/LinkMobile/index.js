@@ -16,11 +16,12 @@ const LinkMobile = () => {
   return(
     
     <div className="linkMobile">
+
       <button className="burger" onClick={toggleBurger} >
         <Burger />
       </button>
 
-      <ul className= {`menuNav ${burgerOpen ? " showMenu" : ""}`} >
+      <ul className= {`menuNav${burgerOpen ? " showMenu" : ""}`} >
         <li> 
           <a href="/A-propos">A Propos</a> 
         </li>
