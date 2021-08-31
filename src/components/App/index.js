@@ -17,7 +17,7 @@ const App = () => {
   // find window width to add a breakpoint
   const [width, setWidth] = useState(window.innerWidth);
   // defined a breakpoint
-  const breakpoint = 750;
+  const breakpoint = 550;
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -35,7 +35,7 @@ const App = () => {
       <Accueil width={width} breakpoint={breakpoint}/>
 
       <Switch>
-        
+
         {/* <Route path='/' exact>
          
         </Route> */}

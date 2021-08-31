@@ -2,7 +2,6 @@ import './style.scss';
 
 import githubLogoBlanc from '../../images/logo-github-blanc.png';
 import linkedinLogoBlanc from '../../images/logo-linkedin-blanc.png';
-import moi from '../../images/moi.jpg';
 import bitmoji from '../../images/bitmoji.jpeg';
 
 

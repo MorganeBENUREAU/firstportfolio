@@ -1,7 +1,7 @@
 .presentation-mobile {
     border-radius: 20px;
     border: 1px solid #E2DADB;
-    margin-top: 0.5em;
+    margin-top: 1.1em;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,14 +10,15 @@
         width: 140px;
         height: 100%;
         border-radius: 50%;
-        padding: 2.3em 1em 1em 1em;
-        
+        padding: 1em;   
+        margin-left: 1em;
     }
 
     .container {
         display: flex;
         flex-direction: column;
-        width: 65%;
+        justify-content: space-between;
+        width: 70%;
         align-items: center;
     }
 
