@@ -4,7 +4,8 @@ import './style.scss';
 const Projets = () => (
   
   <div className="projets">
-    
+
+
   </div>
 );
 

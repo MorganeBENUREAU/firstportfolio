@@ -1,12 +1,14 @@
 import './style.scss';
 
 
-const Accueil = () => (
+const Apropos = () => (
   
-  <div className="accueil">
-    
+  <div className="aPropos">
+    <p>
+      
+    </p>
   </div>
 );
 
 
-export default Accueil;
+export default Apropos;

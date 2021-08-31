@@ -12,7 +12,6 @@ import Projets from '../Projets';
 import { Switch, Route } from 'react-router-dom';
 
 
-
 const App = () => {
 
   // find window width to add a breakpoint
@@ -31,13 +30,15 @@ const App = () => {
   return (
   
     <div className="app">
+
       <NavBar width={width} breakpoint={breakpoint} />
-      
+      <Accueil width={width} breakpoint={breakpoint}/>
+
       <Switch>
         
-        <Route path='/' exact>
-          <Accueil />
-        </Route>
+        {/* <Route path='/' exact>
+         
+        </Route> */}
 
         <Route path='/A-propos' exact>
           <Apropos />
