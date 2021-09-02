@@ -1,50 +1,73 @@
-.presentation-mobile {
-    border-radius: 20px;
-    border: 1px solid #E2DADB;
-    margin-top: 1.1em;
-    width: 100%;
+.container-placement {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+    .presentation-mobile {
+        border-radius: 20px;
+        border: 1px solid #E2DADB;
+        padding: 0.5em;
+        margin-top: 1.1em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 60%;
+            align-items: center;
+        }
+    
+        &__bitmoji {
+            margin: auto;
+    
+            img {
+                width: 100px;
+                border-radius: 50%;
+            }
+        }
+        
+        &__p {
+            line-height: 1.4em;
+            text-align: center;
+            margin: 0.2em;
+        }
+    
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5em;
+            margin: 0.2em;
+        }
+    
+        &__logo {
+            display: flex;
+            margin: 0.2em;
+    
+            .logo {
+                width: 30px;
+                padding: 0.3em;
+            }
+        }
+    
+    }
+}
+
+.aPropos {
+    border: 1px solid #E2DADB;
+    padding: 1em;
+    border-radius: 20px;
+    line-height: 1.5em;
+    margin-top: 1.1em;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
-    img {
-        width: 140px;
-        height: 100%;
-        border-radius: 50%;
-        padding: 1em;   
-        margin-left: 1em;
+    p {
+        padding: 0.5em;
+        font-size: 0.9em;
     }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 70%;
-        align-items: center;
-    }
-
-    &__p {
-        line-height: 1.5em;
-        text-align: center;
-        margin: 0.5em;
-    }
-
-    &__contact {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.5em;
-        margin: 0.5em;
-    }
-
-    &__logo {
-        display: flex;
-        margin: 0.5em;
-
-
-        .logo {
-            width: 40px;
-            padding: 0.4rem;
-        }
-    }
-
-    
 }

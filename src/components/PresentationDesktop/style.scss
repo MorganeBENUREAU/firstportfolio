@@ -1,49 +1,78 @@
-.presentation-desktop {
-    border-radius: 20px;
-    border: 1px solid #E2DADB;
-    margin-top: 1.1em;
-    padding: 1em;
-    width: 165px;
+.container-placement {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
 
-    img {
-        width: 140px;
+    .presentation-desktop {
+
+        border-radius: 20px;
+        border: 1px solid #E2DADB;
+        margin-top: 1.1em;
+        padding: 1em;
+        width: 164px;
         height: 100%;
-        border-radius: 50%;
-        padding: 1em 1em 1em 1em;
-        // margin-left: 1em;
-    }
-
-    .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+    
+        &__bitmoji {
+        
+            margin: auto;
+    
+            img {
+                width: 100px;
+                border-radius: 50%;
+            }
+        }   
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 60%;
+            margin-top: 1em;
+        }
+        
+        &__p {
+            line-height: 1.5em;
+            text-align: center;
+            margin: 0.5em;
+        }
+    
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5em;
+            margin: 0.5em;
+        }
+    
+        &__logo {
+    
+            .logo {
+                width: 40px;
+                padding: 0.4rem;
+            }
+        }    
+        
+    }   
+
+    .aProposDesktop {
+        border: 1px solid #E2DADB;
+        padding: 1em;
+        border-radius: 20px;
+        line-height: 1.5em;
+        margin-top: 1.1em;
+        margin-left: 1em;
+        display: flex;
+        height: 100%;
+        width: 60%;
+        flex-direction: column;
         justify-content: space-between;
-        height: 140px;
-        margin-top: 1em;
-    }
-
-    &__p {
-        line-height: 1.5em;
-        text-align: center;
-        margin: 0.5em;
-    }
-
-    &__contact {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.5em;
-        margin: 0.5em;
-    }
-
-    &__logo {
-
-        .logo {
-            width: 40px;
-            padding: 0.4rem;
+    
+        p {
+            padding: 0.5em;
+            font-size: 0.9em;
         }
     }
-
-    
 }
+

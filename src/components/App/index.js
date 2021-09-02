@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react';
 
 import NavBar from '../NavBar';
 import Accueil from '../Accueil';
-import Apropos from '../Apropos';
 import Contact from '../Contact';
 import Projets from '../Projets';
+import Experience from '../Experience';
+import Formation from '../Formation';
 
 
 import { Switch, Route } from 'react-router-dom';
@@ -32,7 +33,7 @@ const App = () => {
     <div className="app">
 
       <NavBar width={width} breakpoint={breakpoint} />
-      <Accueil width={width} breakpoint={breakpoint}/>
+      <Accueil width={width} breakpoint={breakpoint} />
 
       <Switch>
 
@@ -40,16 +41,24 @@ const App = () => {
          
         </Route> */}
 
-        <Route path='/A-propos' exact>
+        {/* <Route path='/A-propos' exact>
           <Apropos />
+        </Route> */}
+
+        <Route path='/Experience' exact>
+          <Experience />
         </Route>
 
-        <Route path='/Contact' exact>
-          <Contact />
+        <Route path='/Formation' exact>
+          <Formation />
         </Route>
 
         <Route path='/Projets' exact>
           <Projets />
+        </Route>
+
+        <Route path='/Contact' exact>
+          <Contact />
         </Route>
 
       </Switch>
