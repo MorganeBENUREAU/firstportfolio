@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 import NavBar from '../NavBar';
 import Accueil from '../Accueil';
+import Apropos from '../Apropos';
 import Contact from '../Contact';
 import Projets from '../Projets';
 import Experience from '../Experience';
@@ -18,7 +19,7 @@ const App = () => {
   // find window width to add a breakpoint
   const [width, setWidth] = useState(window.innerWidth);
   // defined a breakpoint
-  const breakpoint = 550;
+  const breakpoint = 680;
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -33,35 +34,33 @@ const App = () => {
     <div className="app">
 
       <NavBar width={width} breakpoint={breakpoint} />
-      <Accueil width={width} breakpoint={breakpoint} />
+      
+      <div className="container">
 
-      <Switch>
+        <Accueil width={width} breakpoint={breakpoint} />
 
-        {/* <Route path='/' exact>
-         
-        </Route> */}
+        <Switch>
+4
+          <Route path='/' exact >
+            <Apropos />
+          </Route>
 
-        {/* <Route path='/A-propos' exact>
-          <Apropos />
-        </Route> */}
+          <Route path='/Experience' exact>
+            <Experience />
+          </Route>
 
-        <Route path='/Experience' exact>
-          <Experience />
-        </Route>
+          <Route path='/Formation' exact>
+            <Formation />
+          </Route>
 
-        <Route path='/Formation' exact>
-          <Formation />
-        </Route>
-
-        <Route path='/Projets' exact>
-          <Projets />
-        </Route>
-
-        <Route path='/Contact' exact>
-          <Contact />
-        </Route>
-
-      </Switch>
+          <Route path='/Projets' exact>
+            <Projets />
+          </Route>
+          <Route path='/Contact' exact>
+            <Contact />
+          </Route>
+        </Switch>
+      </div>
     </div>
   )
 };

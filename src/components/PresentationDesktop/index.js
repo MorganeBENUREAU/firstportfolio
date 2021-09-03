@@ -5,7 +5,7 @@ import bitmoji from '../../images/bitmoji.jpeg';
 
 const PresentationDesktop = () => (
   
-  <div className="containerDesktop-placement">
+  // <div className="containerDesktop-placement">
 
     <div className="presentation-desktop">
       <div className="presentation-desktop__bitmoji">
@@ -29,7 +29,7 @@ const PresentationDesktop = () => (
       </div>
     </div>
     
-    <div className="aProposDesktop">
+    /* <div className="aProposDesktop">
       <p>
         Bonjour,
       </p>
@@ -43,8 +43,8 @@ const PresentationDesktop = () => (
       <p>
         Je cherche un premier emploi dans le développement afin de continuer à apprendre (Idéalement en télétravail).
       </p>
-    </div>
-  </div>
+    </div> */
+  // </div>
 );
 
 

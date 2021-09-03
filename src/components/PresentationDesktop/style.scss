@@ -1,78 +1,51 @@
-.containerDesktop-placement {
+.presentation-desktop {
+
+    border-radius: 20px;
+    border: 1px solid #E2DADB;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    height: 420px;
+    flex-direction: column;
 
-    .presentation-desktop {
+    &__bitmoji {
+    
+        margin: auto;
 
-        border-radius: 20px;
-        border: 1px solid #E2DADB;
-        padding: 1em;
-        width: 164px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    
-        &__bitmoji {
-        
-            margin: auto;
-    
-            img {
-                width: 100px;
-                border-radius: 50%;
-            }
-        }   
-    
-        &__container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 60%;
-            margin-top: 1em;
+        img {
+            width: 100px;
+            border-radius: 50%;
         }
-        
-        &__p {
-            line-height: 1.5em;
-            text-align: center;
-            margin: 0.5em;
-        }
-    
-        &__contact {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.5em;
-            margin: 0.5em;
-        }
-    
-        &__logo {
-    
-            .logo {
-                width: 40px;
-                padding: 0.4rem;
-            }
-        }    
-        
     }   
 
-    .aProposDesktop {
-        border: 1px solid #E2DADB;
-        padding: 1em;
-        border-radius: 20px;
-        line-height: 1.5em;
-        margin-left: 1em;
+    &__container {
         display: flex;
-        height: 100%;
-        width: 60%;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
-    
-        p {
-            padding: 0.5em;
-            font-size: 1.1em;
-        }
+        height: 60%;
+        margin-top: 1rem;
     }
-}
+    
+    &__p {
+        line-height: 1.5rem;
+        text-align: center;
+        margin: 0.5rem;
+    }
 
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    &__logo {
+
+        .logo {
+            width: 40px;
+            padding: 0.4rem;
+        }
+    }    
+    
+}   
