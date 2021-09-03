@@ -3,9 +3,12 @@ import './style.scss';
 
 const NavLink = () => (
   
-  <ul className="" >
+  <ul className="navLink" >
     <li> 
-      <a href="/A-propos">A Propos</a> 
+      <a href="/Formation">Formation</a> 
+    </li>
+    <li> 
+      <a href="/Experience">Expérience</a> 
     </li>
     <li> 
       <a href="/Contact">Projets</a> 

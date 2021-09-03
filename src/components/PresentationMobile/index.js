@@ -29,7 +29,7 @@ const PresentationMobile = () => (
         </div>
       </div>
     </div>
-    <div className="aPropos">
+    <div className="aProposMobile">
       <p>
         Bonjour,
       </p>

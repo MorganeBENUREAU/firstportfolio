@@ -1,13 +1,14 @@
-.container-placement {
+.containerDesktop-placement {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-content: center;
+    height: 420px;
 
     .presentation-desktop {
 
         border-radius: 20px;
         border: 1px solid #E2DADB;
-        margin-top: 1.1em;
         padding: 1em;
         width: 164px;
         height: 100%;
@@ -61,7 +62,6 @@
         padding: 1em;
         border-radius: 20px;
         line-height: 1.5em;
-        margin-top: 1.1em;
         margin-left: 1em;
         display: flex;
         height: 100%;
@@ -71,7 +71,7 @@
     
         p {
             padding: 0.5em;
-            font-size: 0.9em;
+            font-size: 1.1em;
         }
     }
 }

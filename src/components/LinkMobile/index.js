@@ -23,11 +23,14 @@ const LinkMobile = () => {
 
       <ul className= {`menuNav${burgerOpen ? " showMenu" : ""}`} >
         <li> 
-          <a href="/A-propos">A Propos</a> 
+          <a href="/Formation">Formation</a> 
+        </li>
+        <li> 
+          <a href="/Experience">Expérience</a> 
         </li>
         <li> 
           <a href="/Contact">Projets</a> 
-          </li>
+        </li>
         <li> 
           <a href="/Projets">Contact</a> 
         </li>
