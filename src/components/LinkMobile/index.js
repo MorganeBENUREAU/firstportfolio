@@ -1,13 +1,15 @@
 import './style.scss';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 import Burger from '../Burger';
+// import CV from '../../../public/CV.pdf';
 
 
-const LinkMobile = () => {
+const LinkMobile = ({burgerOpen, setBurgerOpen}) => {
 
-  const [burgerOpen, setBurgerOpen] = useState(false);
+
   
   const toggleBurger = () => {
     setBurgerOpen(!burgerOpen)
@@ -23,16 +25,19 @@ const LinkMobile = () => {
 
       <ul className= {`menuNav${burgerOpen ? " showMenu" : ""}`} >
         <li> 
-          <a href="/Formation">Formation</a> 
+          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Formation">Formation</NavLink> 
         </li>
         <li> 
-          <a href="/Experience">Expérience</a> 
+          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Experience">Expérience</NavLink> 
         </li>
         <li> 
-          <a href="/Contact">Projets</a> 
+          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Contact">Projets</NavLink> 
         </li>
         <li> 
-          <a href="/Projets">Contact</a> 
+          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Projets">Contact</NavLink> 
+        </li>
+        <li> 
+          <Link onClick={() => setBurgerOpen(false)} exact href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</Link> 
         </li>
       </ul>
     </div>

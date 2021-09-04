@@ -9,6 +9,7 @@
     }
 
     .menuNav {
+        margin-top: 4rem;
         list-style: none;
         position: fixed;
         top: 0;
@@ -40,5 +41,6 @@
 
     .menuNav.showMenu {
         width: 100%;
+        height: 86%;
     }
 }

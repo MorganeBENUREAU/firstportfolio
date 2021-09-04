@@ -4,7 +4,7 @@ import LinkDesktop from '../LinkDesktop';
 import LinkMobile from '../LinkMobile';
 
 
-const NavBar = ({ width, breakpoint }) => (
+const NavBar = ({ width, breakpoint, burgerOpen, setBurgerOpen }) => (
 
   <div className="navbar">
 
@@ -12,7 +12,7 @@ const NavBar = ({ width, breakpoint }) => (
       <h1>Morgane Benureau</h1>
     </a>
   
-    { width < breakpoint ? <LinkMobile /> : <LinkDesktop /> }
+    { width < breakpoint ? <LinkMobile burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  /> : <LinkDesktop /> }
 
   </div>
   
@@ -20,3 +20,4 @@ const NavBar = ({ width, breakpoint }) => (
 
 
 export default NavBar;
+ 

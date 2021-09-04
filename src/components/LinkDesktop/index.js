@@ -1,5 +1,6 @@
 import './style.scss';
 
+import { NavLink, Link } from 'react-router-dom';
 
 const LinkDesktop = () => (
 
@@ -7,16 +8,19 @@ const LinkDesktop = () => (
 
     <ul className = "linkDesktop-list" >
       <li> 
-        <a href="/Formation">Formation</a> 
+        <NavLink to="/Formation">Formation</NavLink> 
       </li>
       <li> 
-        <a href="/Experience">Expérience</a> 
+        <NavLink to="/Experience">Expérience</NavLink> 
       </li>
       <li> 
-        <a href="/Contact">Projets</a> 
+        <NavLink to="/Projets">Projets</NavLink> 
       </li>
       <li> 
-        <a href="/Projets">Contact</a> 
+        <NavLink to="/Contact">Contact</NavLink> 
+      </li>
+      <li> 
+        <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </li>
     </ul>
   </div>
