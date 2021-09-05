@@ -1,6 +1,6 @@
 import './style.scss';
 
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const LinkDesktop = () => (
 
@@ -20,7 +20,7 @@ const LinkDesktop = () => (
         <NavLink to="/Contact">Contact</NavLink> 
       </li>
       <li> 
-        <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="/CV-Dark.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </li>
     </ul>
   </div>

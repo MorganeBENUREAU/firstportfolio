@@ -1,7 +1,7 @@
 import './style.scss';
 
-import { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Burger from '../Burger';
 // import CV from '../../../public/CV.pdf';
@@ -31,13 +31,13 @@ const LinkMobile = ({burgerOpen, setBurgerOpen}) => {
           <NavLink onClick={() => setBurgerOpen(false)} exact to="/Experience">Expérience</NavLink> 
         </li>
         <li> 
-          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Contact">Projets</NavLink> 
+          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Projets">Projets</NavLink> 
         </li>
         <li> 
-          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Projets">Contact</NavLink> 
+          <NavLink onClick={() => setBurgerOpen(false)} exact to="/Contact">Contact</NavLink> 
         </li>
         <li> 
-          <Link onClick={() => setBurgerOpen(false)} exact href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</Link> 
+          <a href="/CV-Dark.pdf" target="_blank" rel="noopener noreferrer">CV</a> 
         </li>
       </ul>
     </div>

@@ -5,9 +5,11 @@ const Experience = () => (
   
   <div className="experience">
 
+    <h2>Experience</h2>
+
     <section>
-      <h2>2021</h2>
-      <h3>DEVELOPPEUSE BACK-END JAVASCRIPT (O’clock) - Du 11 août au 8 septembre</h3>
+      <h3>2021</h3>
+      <h4>DEVELOPPEUSE BACK-END JAVASCRIPT (O’clock) - Du 11 août au 8 septembre</h4>
 
       <ul className="experience__list">
         <li>
@@ -26,11 +28,11 @@ const Experience = () => (
 
 
     <section>
-      <h2>2017 - 2020</h2> 
-      <h3>
+      <h3>2017 - 2020</h3> 
+      <h4>
         EMPLOYÉE ADMINISTRATIVE (Atib) - Du
         3 avril 2017 au 28 octobre 2020 (CDI / Congé parental)
-      </h3>
+      </h4>
 
       <ul className="experience__list">
         <li>
@@ -52,8 +54,8 @@ const Experience = () => (
     </section>
 
     <section>
-      <h2>2010 - 2015</h2>
-      <h3>DIVERS CONTRATS D’ADMINISTRATIF EN INTÉRIM</h3>
+      <h3>2010 - 2015</h3>
+      <h4>DIVERS CONTRATS D’ADMINISTRATIF EN INTÉRIM</h4>
     </section>
     
   </div>

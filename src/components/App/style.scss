@@ -3,10 +3,9 @@
     .container {
         display: flex;
         flex-direction: row;
-        // border: 1px solid blue;
         justify-content: space-around;
         align-content: center;
-        // height: 580px;
+        min-height: 580px;
         margin-top: 3rem;
     }
 
