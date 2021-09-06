@@ -1,18 +1,21 @@
 import './style.scss';
 
 import LinkDesktop from '../LinkDesktop';
-import LinkMobile from '../LinkMobile';
+import Burger from '../Burger';
 
-
-const NavBar = ({ width, breakpoint, burgerOpen, setBurgerOpen }) => (
+const NavBar = ({ width, breakpoint, burgerIsOpen, setBurgerIsOpen }) => (
 
   <div className="navbar">
 
     <a href="/">
       <h1>Morgane Benureau</h1>
     </a>
-  
-    { width < breakpoint ? <LinkMobile burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  /> : <LinkDesktop /> }
+
+    { width < breakpoint ? ( 
+      <>
+      <Burger burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} />
+      </>
+    ) : <LinkDesktop /> }
 
   </div>
   

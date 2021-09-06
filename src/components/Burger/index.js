@@ -1,15 +1,15 @@
 import './style.scss';
 
 
-const Burger = () => (
+const Burger = ({ burgerIsOpen, setBurgerIsOpen }) => (
   
-  <>
-    <div className="burger-menu">
-      <div className="burger"></div>
-      <div className= "burger"></div>
-      <div className= "burger"></div>
-    </div>
-  </>
+
+  <div className="burger-menu" onClick={ () => setBurgerIsOpen(!burgerIsOpen)}>
+    <div className="burger"></div>
+    <div className= "burger"></div>
+    <div className= "burger"></div>
+  </div>
+  
 );
 
 

@@ -1,20 +1,12 @@
 .linkMobile {
 
-    .button {
-        position: fixed;
-        left: 40px;
-        top: 40px;
-        z-index: 10;
-        cursor: pointer;
-    }
-
     .menuNav {
         margin-top: 4rem;
         list-style: none;
         position: fixed;
         top: 0;
         border-radius: 20px;
-        background: #373737;
+        background-color: #00000054;
         left: 0;
         bottom: 0;
         width: 0;

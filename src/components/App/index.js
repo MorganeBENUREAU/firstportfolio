@@ -31,38 +31,62 @@ const App = () => {
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []); 
   
-  const [burgerOpen, setBurgerOpen] = useState(false);
+ const [burgerIsOpen, setBurgerIsOpen] = useState(false);
   return (
   
     <div className="app">
 
-      <NavBar width={width} breakpoint={breakpoint} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />
+      <NavBar width={width} breakpoint={breakpoint} burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} />
       
       <div className="container">
 
-      <Accueil width={width} breakpoint={breakpoint} />
+      
 
         <Switch>
-4
+
           <Route path='/' exact >
-            {burgerOpen ? <LinkMobile/> : <Apropos />}
+            {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
+              <>
+              <Accueil width={width} breakpoint={breakpoint} />
+              <Apropos />
+              </>
+            )}
           </Route>
 
           <Route path='/Experience' exact>
-            {burgerOpen ? <LinkMobile/> : <Experience />}
+            {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
+              <>
+              <Accueil width={width} breakpoint={breakpoint} />
+              <Experience />
+              </>
+            )}
             
           </Route>
 
           <Route path='/Formation' exact>
-            {burgerOpen ? <LinkMobile/> : <Formation />}
-            
+            {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
+              <>
+              <Accueil width={width} breakpoint={breakpoint} />
+              <Formation />
+              </>
+            )}
           </Route>
 
           <Route path='/Projets' exact>
-            {burgerOpen ? <LinkMobile/> : <Projets />}
+            {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
+              <>
+              <Accueil width={width} breakpoint={breakpoint} />
+              <Projets />
+              </>
+            )}
           </Route>
           <Route path='/Contact' exact>
-            {burgerOpen ? <LinkMobile/> : <Contact />}
+            {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
+              <>
+              <Accueil width={width} breakpoint={breakpoint} />
+              <Contact />
+              </>
+            )}
           </Route>
         </Switch>
       </div>

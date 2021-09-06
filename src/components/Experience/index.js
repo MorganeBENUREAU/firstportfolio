@@ -7,10 +7,10 @@ const Experience = () => (
 
     <h2>Experience</h2>
 
+  <div className="experience__container">
     <section>
       <h3>2021</h3>
       <h4>DEVELOPPEUSE BACK-END JAVASCRIPT (O’clock) - Du 11 août au 8 septembre</h4>
-
       <ul className="experience__list">
         <li>
           - Développement front et back en équipe de 5 d’un
@@ -25,15 +25,12 @@ const Experience = () => (
         </li>
       </ul>
     </section>
-
-
     <section>
-      <h3>2017 - 2020</h3> 
+      <h3>2017 - 2020</h3>
       <h4>
         EMPLOYÉE ADMINISTRATIVE (Atib) - Du
         3 avril 2017 au 28 octobre 2020 (CDI / Congé parental)
       </h4>
-
       <ul className="experience__list">
         <li>
           - Gestion de la base de données de l’ERP
@@ -52,11 +49,11 @@ const Experience = () => (
         </li>
       </ul>
     </section>
-
     <section>
       <h3>2010 - 2015</h3>
       <h4>DIVERS CONTRATS D’ADMINISTRATIF EN INTÉRIM</h4>
     </section>
+  </div>
     
   </div>
 );

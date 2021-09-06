@@ -23,7 +23,7 @@ const Contact = () => {
     
     <div className="contact">
       <h2>Formulaire de contact</h2>
-        {message ? "Votre message a bien été envoyé." :
+        {message ? <p className="contact__confirmed-message">Votre message a bien été envoyé.</p> :
           <form method="post" id="contactForm" name="contactForm" onSubmit={sendEmail}>
 
             <div className="contact__first">
