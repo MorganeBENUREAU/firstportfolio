@@ -23,7 +23,8 @@ const Projets = () => (
         
           <p className="container__more-informations">
             Projet réalisé en groupe de 5 (3 personnes côté front, 2 côté back, dont moi-même). Ce projet a été fait dans le cadre de ma formation O'clock comme projet de fin d'études. C'est un site qui permet de faire le lien entre des parents et une structure d'accueil comme une crèche.
-            <Link exact to="https://notabebe.netlify.app/">lien du projet</Link>
+        
+            <a href="https://notabebe.netlify.app/">lien du projet</a>
           </p>
         </section>
 
