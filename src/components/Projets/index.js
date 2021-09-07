@@ -19,10 +19,12 @@ const Projets = () => (
             <img src={react} alt="react" className="container-techno__img"/>
           </div>
         
-          <p className="container__more-informations">
-            Projet réalisé en groupe de 5 (3 personnes côté front, 2 côté back, dont moi-même). Ce projet a été fait dans le cadre de ma formation O'clock comme projet de fin d'études. C'est un site qui permet de faire le lien entre des parents et une structure d'accueil comme une crèche.
-          </p>
-          <a href="https://notabebe.netlify.app/">Lien du projet</a>
+          <div className="container__more-informations">
+            <p>
+              Projet réalisé en groupe de 5 (3 personnes côté front, 2 côté back, dont moi-même). Ce projet a été fait dans le cadre de ma formation O'clock comme projet de fin d'études. C'est un site qui permet de faire le lien entre des parents et une structure d'accueil comme une crèche.
+            </p>
+            <a target="_blank" rel="noreferrer" href="https://notabebe.netlify.app/">Lien du projet</a>
+          </div>
         </section>
 
       
