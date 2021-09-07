@@ -18,7 +18,7 @@ const Experience = () => (
           employés d’une crèche
         </li>
         <li>
-          - DéveloppementMise en situation professionnelle, méthode agile
+          - Mise en situation professionnelle, méthode agile
         </li>
         <li>
           - Rôle de git master
