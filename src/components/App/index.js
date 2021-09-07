@@ -20,7 +20,7 @@ const App = () => {
   // find window width to add a breakpoint
   const [width, setWidth] = useState(window.innerWidth);
   // defined a breakpoint
-  const breakpoint = 750;
+  const breakpoint = 780;
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -38,9 +38,7 @@ const App = () => {
 
       <NavBar width={width} breakpoint={breakpoint} burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} />
       
-      <div className="container">
-
-      
+      <div className="app-container">
 
         <Switch>
 

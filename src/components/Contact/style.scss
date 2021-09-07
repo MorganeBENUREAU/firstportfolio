@@ -1,6 +1,5 @@
 .contact {
-    width: 80%;
-    border: 1px solid red;
+    width: 70%;
 
     h2 {
         font-size: 2rem;
@@ -73,10 +72,9 @@
     }
 }
 
-@media  screen and (max-width: 750px){
+@media  screen and (max-width: 780px){
     .contact {
         width: 100%;
-        min-height: 100%;
         margin-top: 1rem;
 
         form {

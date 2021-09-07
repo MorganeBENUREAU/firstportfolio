@@ -1,6 +1,6 @@
 .app {
 
-    .container {
+    .app-container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -9,13 +9,12 @@
         margin: 4rem 0;
     }
 
-    @media  screen and (max-width: 750px){
-        .container {
+    @media  screen and (max-width: 780px){
+        .app-container {
             flex-direction: column;
             margin-top: 1rem;
             max-height: 100%;
             padding: 0.6rem;
-            
         }
     }
 
