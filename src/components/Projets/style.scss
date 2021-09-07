@@ -43,10 +43,7 @@
             
         } 
     
-        &__img {
-            width: 100%;
-            margin: auto;
-        }
+        
     
         &__more-informations {
             box-shadow: inset 2px 2px 4px rgba(226,218,219,0.5), 4px 4px 4px rgba(0, 0, 0, 0.5);
@@ -56,10 +53,22 @@
             border-radius: 20px;
             padding: 0.8rem;
         }
+
+        .container-techno {
+
+            display: flex;
+
+            &__img {
+                width: 20%;
+                margin: auto;
+            }
+        }
     
     }
     
 }
+
+
  
 @media screen and (max-width: 780px){
     .projets {
