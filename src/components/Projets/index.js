@@ -1,7 +1,5 @@
 import './style.scss';
 
-import { Link } from 'react-router-dom';
-
 import nodeJS from '../../images/logo-nodeJS.png';
 import postgreSQL from '../../images/logo-postgresql.png';
 import react from '../../images/logo-react.png';
@@ -23,9 +21,8 @@ const Projets = () => (
         
           <p className="container__more-informations">
             Projet réalisé en groupe de 5 (3 personnes côté front, 2 côté back, dont moi-même). Ce projet a été fait dans le cadre de ma formation O'clock comme projet de fin d'études. C'est un site qui permet de faire le lien entre des parents et une structure d'accueil comme une crèche.
-        
-            <a href="https://notabebe.netlify.app/">lien du projet</a>
           </p>
+          <a href="https://notabebe.netlify.app/">Lien du projet</a>
         </section>
 
       
