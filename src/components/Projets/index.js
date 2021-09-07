@@ -2,7 +2,7 @@ import './style.scss';
 
 import nodeJS from '../../images/logo-nodeJS.png';
 import postgreSQL from '../../images/logo-postgresql.png';
-import react from '../../images/logo-react.png';
+// import react from '../../images/logo-react.png';
 
 
 const Projets = () => (
@@ -25,26 +25,26 @@ const Projets = () => (
       </section>
       
       <section>
-        <h3> Titre du projet </h3>
+        <h3> Projet à venir </h3>
         {/* <img src={img} alt="projets" className="projets__img"/> */}
+        {/* <p className="container__more-informations">
+          presentation succinte
+        </p> */}
+      </section>
+      {/* <section>
+        <h3> Projet à venir </h3>
+        <img src={img} alt="projets" className="projets__img"/>
         <p className="container__more-informations">
           presentation succinte
         </p>
-      </section>
-      <section>
-        <h3> Titre du projet </h3>
-        {/* <img src={img} alt="projets" className="projets__img"/> */}
+      </section> */}
+      {/* <section>
+        <h3> Projet à venir </h3>
+        <img src={img} alt="projets" className="projets__img"/>
         <p className="container__more-informations">
           presentation succinte
         </p>
-      </section>
-      <section>
-        <h3> Titre du projet </h3>
-        {/* <img src={img} alt="projets" className="projets__img"/> */}
-        <p className="container__more-informations">
-          presentation succinte
-        </p>
-      </section>
+      </section> */}
     </div>
 
   </div>
