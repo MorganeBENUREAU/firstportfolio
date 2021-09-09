@@ -22,6 +22,7 @@
 
         section {
             box-shadow: inset 2px 2px 4px rgba(226,218,219,0.5), 4px 4px 4px rgba(0, 0, 0, 0.5);
+            transition: ease-in-out 0.4s;
             background-color: #00000054;
             border-radius: 20px;
             padding: 0.8rem;
@@ -41,6 +42,9 @@
                 padding-bottom: 1rem;
             }        
         } 
+        section:hover {
+            transform: scale(1.1);
+        }
     
         &__more-informations {
             box-shadow: inset 2px 2px 4px rgba(226,218,219,0.5), 4px 4px 4px rgba(0, 0, 0, 0.5);
