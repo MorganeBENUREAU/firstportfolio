@@ -9,7 +9,8 @@ import Contact from '../Contact';
 import Projets from '../Projets';
 import Experience from '../Experience';
 import Formation from '../Formation';
-import LinkMobile from '../LinkMobile'
+import LinkMobile from '../LinkMobile';
+import Page404 from '../Page404';
 
 
 import { Switch, Route } from 'react-router-dom';
@@ -58,7 +59,6 @@ const App = () => {
               <Experience />
               </>
             )}
-            
           </Route>
 
           <Route path='/Formation' exact>
@@ -78,6 +78,7 @@ const App = () => {
               </>
             )}
           </Route>
+
           <Route path='/Contact' exact>
             {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
               <>
@@ -86,6 +87,16 @@ const App = () => {
               </>
             )}
           </Route>
+
+          <Route>
+            {burgerIsOpen ? <LinkMobile burgerIsOpen={burgerIsOpen} setBurgerIsOpen={setBurgerIsOpen} /> : (
+              <>
+              <Accueil width={width} breakpoint={breakpoint} />
+              <Page404 />
+              </>
+            )}
+          </Route>
+
         </Switch>
       </div>
     </div>
