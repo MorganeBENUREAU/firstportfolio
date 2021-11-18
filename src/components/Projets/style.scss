@@ -4,7 +4,6 @@
     max-height: 100%;
     justify-content: space-around;
     width: 70%;
-    border: 1px solid red;
     
     h2 {
         font-size: 2rem;
@@ -20,8 +19,9 @@
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
-        height: 100%;
+        height: 95%;
         border: 1px solid blue;
+        overflow-y: auto;
 
         section {
             box-shadow: inset 2px 2px 4px rgba(226,218,219,0.5), 4px 4px 4px rgba(0, 0, 0, 0.5);
@@ -31,12 +31,13 @@
             padding: 0.8rem;
             line-height: 1.6rem;
             display: flex;
-            width: 35%;
+            width: 40%;
             margin: 2rem auto;
             margin-bottom: 1rem;
             flex-direction: column;
             justify-content: space-around;
             font-size: 0.8rem;
+            border: 1px solid red;
     
             h3 {
                 font-weight: bold;
@@ -82,7 +83,7 @@
     } 
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 600px){
     .projets {
         width: 100%;
         margin-top: 1rem;
