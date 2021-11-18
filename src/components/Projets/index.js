@@ -3,7 +3,8 @@ import './style.scss';
 import nodeJS from '../../images/logo-nodeJS.png';
 import postgreSQL from '../../images/logo-postgresql.png';
 import react from '../../images/logo-react.png';
-
+import koa from '../../images/logo-koa.png';
+import typescript from '../../images/logo-typescript.png';
 
 const Projets = () => (
   
@@ -20,7 +21,7 @@ const Projets = () => (
           </div>
         
           <div className="container__more-informations">
-            <p>
+            <p className="container__more-informations">
               Projet réalisé en groupe de 5 (3 personnes côté front, 2 côté back, dont moi-même). Ce projet a été fait dans le cadre de ma formation O'clock comme projet de fin d'études. C'est un site qui permet de faire le lien entre des parents et une structure d'accueil comme une crèche.
             </p>
             <a target="_blank" rel="noreferrer" href="https://notabebe.netlify.app/">Lien du projet.</a>
@@ -43,6 +44,21 @@ const Projets = () => (
           </div>
         </section>
 
+        <section>
+          <h3> Générateur titre film de Noël </h3>
+          <div className="container-techno">
+            <img src={nodeJS} alt="nodeJS" className="container-techno__img"/>
+            <img src={koa} alt="postgresQL" className="container-techno__img"/>
+            <img src={typescript} alt="postgresQL" className="container-techno__img"/>
+          </div>
+        
+          <div className="container__more-informations">
+            <p className="container__more-informations">
+              Apprentissage de Koa et typescript (en cours)
+            </p>
+            <a target="_blank" rel="noreferrer" href="https://github.com/MorganeBENUREAU/">Lien vers le github du projet.</a>
+          </div>
+        </section>
         
         <section>
           <h3> Projet à venir </h3>
