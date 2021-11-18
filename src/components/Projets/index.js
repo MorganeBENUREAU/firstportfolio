@@ -35,9 +35,12 @@ const Projets = () => (
             <img src={postgreSQL} alt="postgresQL" className="container-techno__img"/>
           </div>
         
-          <p className="container__more-informations">
-            Api de bibliothèque personnelle faite en NodeJS et PostgreSQL. Début de front en EJS, mon but est de faire le front en React. (en cours)
-          </p>
+          <div className="container__more-informations">
+            <p className="container__more-informations">
+              Api de bibliothèque personnelle faite en NodeJS et PostgreSQL. Début de front en EJS, mon but est de faire le front en React. (en cours)
+            </p>
+            <a target="_blank" rel="noreferrer" href="https://github.com/MorganeBENUREAU/bibliO">Lien vers le github du projet.</a>
+          </div>
         </section>
 
         
