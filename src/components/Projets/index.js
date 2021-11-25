@@ -54,7 +54,7 @@ const Projets = () => (
         
           <div className="container__more-informations">
             <p className="container__more-informations">
-              Apprentissage de Koa et typescript (en cours)
+              Apprentissage de Koa et typescript
             </p>
             <a target="_blank" rel="noreferrer" href="https://github.com/MorganeBENUREAU/">Lien vers le github du projet.</a>
           </div>
