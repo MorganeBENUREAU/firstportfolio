@@ -45,7 +45,7 @@ const Projets = () => (
         </section>
 
         <section>
-          <h3> Générateur titre film de Noël </h3>
+          <h3> Générateur titre de film disney </h3>
           <div className="container-techno">
             <img src={nodeJS} alt="nodeJS" className="container-techno__img"/>
             <img src={koa} alt="postgresQL" className="container-techno__img"/>
