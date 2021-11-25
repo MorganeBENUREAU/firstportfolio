@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-import emailjsConf from './env.js';
+import emailjsConf from './env';
 
 import './style.scss';
 
