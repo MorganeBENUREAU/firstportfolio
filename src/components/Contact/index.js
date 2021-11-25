@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-import emailjsConf from './env';
 
 import './style.scss';
 
@@ -11,7 +10,7 @@ const Contact = () => {
 
   const sendEmail = (event) => {
     event.preventDefault();
-    emailjs.sendForm(emailjsConf.EMAILJS_SERVICE, emailjsConf.EMAILJS_TEMPLATE, event.target, emailjsConf.EMAILJS_USER)
+    emailjs.sendForm('service_b846wiv', 'service_b846wiv', event.target, 'user_oqDSegtSVPfXTWUf9Rhrw')
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             setMessage(true);
