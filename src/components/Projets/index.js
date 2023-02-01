@@ -59,6 +59,20 @@ const Projets = () => (
             <a target="_blank" rel="noreferrer" href="https://github.com/MorganeBENUREAU/">Lien vers le github du projet.</a>
           </div>
         </section>
+
+        <section>
+          <h3> Création site vitrine pour particulier </h3>
+          <div className="container-techno">
+            <img src={react} alt="react" className="container-techno__img"/>
+          </div>
+        
+          <div className="container__more-informations">
+            <p className="container__more-informations">
+              Apprentissage de leaflet pour ajouter une carte et firebase pour héberger le site.
+            </p>
+            <a target="_blank" rel="noreferrer" href="https://martineangibaud.fr/">Lien du site.</a>
+          </div>
+        </section>
         
         <section>
           <h3> Projet à venir </h3>
